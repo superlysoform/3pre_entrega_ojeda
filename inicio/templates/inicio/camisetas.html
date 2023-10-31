@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title_head %}
+<title>Camisetas</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+Stock de Camisetas!
+{% endblock h1_header %}
+
+{% block main %}
+
+<ul>
+    {% for camiseta in listado_de_camisetas %}
+    <li>{{camiseta}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock main %}
+
+
+{% block call_to_action %}{% endblock call_to_action %}
+{% block about %}{% endblock about %}
+{% block services %}{% endblock services %}
+
+
+
+{% comment %} {% block h1_header %}
+Camiseta{{camiseta.marca}}
+Camiseta{{camiseta.equipo}}
+{% endblock h1_header %} {% endcomment %}

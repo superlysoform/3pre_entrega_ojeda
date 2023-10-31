@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title_head %}
+<title>Creacion de Camiseta</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+Creacion de Camiseta
+{% endblock h1_header %}
+
+{% block portfolio %}{% endblock portfolio %}
+{% block call_to_action %}{% endblock call_to_action %}
+{% block about %}{% endblock about %}
+{% block services %}{% endblock services %}
+
+{% block main %}
+
+{% comment %} <form action="" method="POST">
+    {% csrf_token %}
+    
+    <p>marca <input type="text" name="marca"> </p>
+    <p>equipo <input type="text" name="equipo"> </p>
+    <p>descripcion <input type="text" name="descripcion"> </p>
+    <p>año <input type="number" name="anio"> </p>
+
+    <input type="submit" value="Crear" >
+
+</form> {% endcomment %}
+
+<form action="" method="post">
+
+    {% csrf_token %}
+    {{formulario}}
+
+    <input type="submit" value="Crear">
+
+
+</form>
+
+
+{% endblock main %}
+
+
+
+
