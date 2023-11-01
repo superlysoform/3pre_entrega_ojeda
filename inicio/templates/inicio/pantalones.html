@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block title_head %}
-<title>Camisetas</title>
+<title>Pantalones</title>
 {% endblock title_head %}
 
 {% block h1_header %}
-Stock de Camisetas!
+Stock de Pantalones!
 {% endblock h1_header %}
 
 {% block main %}
@@ -16,10 +16,10 @@ Stock de Camisetas!
     <input type="submit" value="Buscar">
 </form>
 
-{% if listado_de_camisetas %}
+{% if listado_de_pantalones %}
 <ul>
-    {% for camiseta in listado_de_camisetas %}
-    <li>{{camiseta}}</li>
+    {% for pantalon in listado_de_pantalones %}
+    <li>{{pantalon}}</li>
     {% endfor %}
 </ul>
 {% else %}
@@ -32,6 +32,3 @@ Stock de Camisetas!
 {% block call_to_action %}{% endblock call_to_action %}
 {% block about %}{% endblock about %}
 {% block services %}{% endblock services %}
-
-
-
